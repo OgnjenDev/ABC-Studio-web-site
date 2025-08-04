@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABC Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>ABC Studio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+        <li><a href="#about" aria-label="Go to About section">About</a></li>
+        <li><a href="#services" aria-label="Go to Services section">Services</a></li>
+        <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+        <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" class="hero" tabindex="-1" aria-label="Welcome hero section">
+    <h2>We Code Your Ideas Into Reality</h2>
+    <p>Innovative software and programming solutions tailored to your needs.</p>
+    <button class="btn-primary" id="contactBtn">Contact Us</button>
+  </section>
+
+  <section id="about" aria-label="About ABC Studio">
+    <h3>About Us</h3>
+    <p>
+      ABC Studio is a creative software company dedicated to building powerful, reliable, and user-friendly applications for modern businesses and startups.
+    </p>
+  </section>
+
+  <section id="services" aria-label="Our Services">
+    <h3>Our Services</h3>
+    <div class="services-grid">
+      <div class="service-card" tabindex="0">
+        <h4>Web Development</h4>
+        <p>Building responsive and fast websites and web applications tailored to your business needs.</p>
+      </div>
+      <div class="service-card" tabindex="0">
+        <h4>Mobile App Development</h4>
+        <p>Creating sleek and performant apps for iOS and Android platforms.</p>
+      </div>
+      <div class="service-card" tabindex="0">
+        <h4>Custom Software Solutions</h4>
+        <p>Tailored software to optimize your workflow and business operations.</p>
+      </div>
+      <div class="service-card" tabindex="0">
+        <h4>UI/UX Design</h4>
+        <p>Designing intuitive and beautiful user experiences that engage your customers.</p>
+      </div>
+      <div class="service-card" tabindex="0">
+        <h4>Automation & Scripts</h4>
+        <p>Automating repetitive tasks to save time and reduce errors.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-label="Our Projects">
+    <h3>Our Projects</h3>
+    <p class="projects-note">Coming soon: a showcase of our latest software and client projects.</p>
+  </section>
+
+  <section id="contact" aria-label="Contact ABC Studio">
+    <h3>Contact Us</h3>
+    <form id="contact-form" novalidate>
+      <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
+      <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" />
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+      <button type="submit">Send Message</button>
+      <p id="form-message" role="alert" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 ABC Studio. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
